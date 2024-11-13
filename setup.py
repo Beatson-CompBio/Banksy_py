@@ -4,11 +4,11 @@ setup(
     name='banksy_py',
     version='0.0.1',
     description='Pip installable version of Banksy_py; all credit goes to the Banksy authors.',
-    author = 'Nigel Chou;Yifei Yue',
-    author_email = 'Nigel_Chou@gis.a-star.edu.sg',
-    mantainer='albert.plaplanas@sanofi.com',
-    mantainer_email='albert.plaplanas@sanofi.com',
-    packages=["banksy_py", "banksy_utils"],
+    author='Nigel Chou;Yifei Yue',
+    author_email='Nigel_Chou@gis.a-star.edu.sg',
+    maintainer='albert.plaplanas@sanofi.com',
+    maintainer_email='albert.plaplanas@sanofi.com',
+    packages=find_packages(include=["banksy_py", "banksy_py.*"]),
     install_requires=[
         'anndata>=0.10.8',
         'anyio>=4.0.0',
@@ -32,9 +32,9 @@ setup(
         'umap-learn>=0.5.4',
         'urllib3<4.0',
         'websocket-client<3.0',
-	'leidenalg>=0.10.2',
-	'IPython',
-	'rpy2'
+        'leidenalg>=0.10.2',
+        'IPython',
+        'rpy2'
     ],
     python_requires='>=3.6',
 )
