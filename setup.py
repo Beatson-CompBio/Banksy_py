@@ -8,7 +8,7 @@ setup(
     author_email='Nigel_Chou@gis.a-star.edu.sg',
     maintainer='albert.plaplanas@sanofi.com',
     maintainer_email='albert.plaplanas@sanofi.com',
-    packages=["banksy_py", "banksy_utils", "banksy"],
+    packages=["banksy_py", "banksy_py.banksy_utils", "banksy_py.banksy"],
     install_requires=[
         'anndata>=0.10.8',
         'anyio>=4.0.0',
